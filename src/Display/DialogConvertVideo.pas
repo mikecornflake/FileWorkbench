@@ -290,8 +290,7 @@ Begin
       sFileExt := Lowercase(Value(oDataset, 'FileExt'));
       fDuration := ValueAsFloat(oDataset, 'MM_Duration', -1);
 
-      If Not ((sFileExt = '.mpg') Or (sFileExt = '.wmv') Or (sFileExt = '.asf') Or
-        (sFileExt = '.vob') Or (sFileExt = '.avi') Or (sFileExt = '.m4v')) Then
+      If Not IsVideo(sFileExt) Then
         Status(Format('%s: %d of %d [%s] is in a format not selected for conversion',
           [TimeToStr(Now()), oDataset.RecNo, oDataset.RecordCount, sFile + sFileExt]))
       Else If (Not Converted) Then

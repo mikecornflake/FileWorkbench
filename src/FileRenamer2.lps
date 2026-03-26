@@ -8,7 +8,7 @@
         <Item1 ID="990724149927" Modes="Default" Value="-gw2"/>
       </SessionMatrixOptions>
     </BuildModes>
-    <Units Count="235">
+    <Units Count="236">
       <Unit0>
         <Filename Value="FileRenamer2.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -30,9 +30,8 @@
         <ComponentName Value="frmRenamer"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="813"/>
-        <CursorPos X="34" Y="819"/>
+        <TopLine Value="531"/>
+        <CursorPos X="3" Y="536"/>
         <UsageCount Value="200"/>
         <Bookmarks Count="1">
           <Item0 Y="840" ID="1"/>
@@ -51,9 +50,11 @@
       <Unit4>
         <Filename Value="Classes\TagMultimedia.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos X="39" Y="7"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="89"/>
+        <CursorPos X="42" Y="122"/>
         <UsageCount Value="201"/>
+        <Loaded Value="True"/>
       </Unit4>
       <Unit5>
         <Filename Value="Classes\uShellDragDrop.pp"/>
@@ -99,7 +100,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="52"/>
         <CursorPos X="21" Y="67"/>
-        <UsageCount Value="197"/>
+        <UsageCount Value="198"/>
       </Unit9>
       <Unit10>
         <Filename Value="Display\DialogConvertVideo.pas"/>
@@ -107,10 +108,12 @@
         <ComponentName Value="dlgConvertVideo"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="305"/>
-        <CursorPos X="15" Y="293"/>
-        <UsageCount Value="97"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="275"/>
+        <CursorPos X="30" Y="293"/>
+        <UsageCount Value="98"/>
+        <Loaded Value="True"/>
       </Unit10>
       <Unit11>
         <Filename Value="Display\DialogRenameOptions.pas"/>
@@ -120,7 +123,7 @@
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="14" Y="5"/>
-        <UsageCount Value="65"/>
+        <UsageCount Value="66"/>
       </Unit11>
       <Unit12>
         <Filename Value="Classes\TagVideoNFO.pas"/>
@@ -128,7 +131,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="160"/>
         <CursorPos X="5" Y="179"/>
-        <UsageCount Value="53"/>
+        <UsageCount Value="54"/>
       </Unit12>
       <Unit13>
         <Filename Value="B:\fpc\packages\fcl-db\src\base\bufdataset_parser.pp"/>
@@ -213,14 +216,12 @@
         <TopLine Value="211"/>
         <CursorPos X="58" Y="224"/>
         <UsageCount Value="9"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit23>
       <Unit24>
         <Filename Value="B:\ZEOS Trunk\src\component\ZAbstractDataset.pas"/>
         <TopLine Value="456"/>
         <CursorPos X="18" Y="469"/>
         <UsageCount Value="9"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit24>
       <Unit25>
         <Filename Value="B:\Lazarus\fpc\2.6.4\source\packages\fcl-db\src\base\db.pas"/>
@@ -593,7 +594,6 @@
         <EditorIndex Value="-1"/>
         <CursorPos X="25" Y="6"/>
         <UsageCount Value="2"/>
-        <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit75>
       <Unit76>
         <Filename Value="Support\TagSupport.pas"/>
@@ -648,56 +648,47 @@
         <Filename Value="..\..\Compile\Test Data\CP\CP_2010_10_19.log"/>
         <EditorIndex Value="-1"/>
         <UsageCount Value="1"/>
-        <DefaultSyntaxHighlighter Value="None"/>
       </Unit83>
       <Unit84>
         <Filename Value="..\..\Compile\Test Data\CP\CP_2010_10_21.log"/>
         <EditorIndex Value="-1"/>
         <UsageCount Value="1"/>
-        <DefaultSyntaxHighlighter Value="None"/>
       </Unit84>
       <Unit85>
         <Filename Value="..\..\Compile\Test Data\CP\CP_2010_10_25.log"/>
         <EditorIndex Value="-1"/>
         <UsageCount Value="1"/>
-        <DefaultSyntaxHighlighter Value="None"/>
       </Unit85>
       <Unit86>
         <Filename Value="..\..\Compile\Test Data\CP\CP_2010_10_22.log"/>
         <EditorIndex Value="-1"/>
         <UsageCount Value="1"/>
-        <DefaultSyntaxHighlighter Value="None"/>
       </Unit86>
       <Unit87>
         <Filename Value="..\..\Compile\Test Data\CP\CP_2010_10_18.log"/>
         <EditorIndex Value="-1"/>
         <UsageCount Value="1"/>
-        <DefaultSyntaxHighlighter Value="None"/>
       </Unit87>
       <Unit88>
         <Filename Value="..\..\Compile\Test Data\CP\CP_2010_10_16.log"/>
         <EditorIndex Value="-1"/>
         <UsageCount Value="1"/>
-        <DefaultSyntaxHighlighter Value="None"/>
       </Unit88>
       <Unit89>
         <Filename Value="..\..\Compile\Test Data\CP\CP_2010_10_17.log"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="76" Y="7"/>
         <UsageCount Value="1"/>
-        <DefaultSyntaxHighlighter Value="None"/>
       </Unit89>
       <Unit90>
         <Filename Value="..\..\Compile\Test Data\CP\CP_2010_10_20.log"/>
         <EditorIndex Value="-1"/>
         <UsageCount Value="1"/>
-        <DefaultSyntaxHighlighter Value="None"/>
       </Unit90>
       <Unit91>
         <Filename Value="..\..\Compile\Test Data\CP\CP_2010_10_14.log"/>
         <EditorIndex Value="-1"/>
         <UsageCount Value="1"/>
-        <DefaultSyntaxHighlighter Value="None"/>
       </Unit91>
       <Unit92>
         <Filename Value="B:\lazarus_trunk\components\lazutils\graphtype.pp"/>
@@ -711,13 +702,11 @@
         <Filename Value="..\..\Compile\Test Data\CP\CP_2010_10_24.log"/>
         <EditorIndex Value="-1"/>
         <UsageCount Value="1"/>
-        <DefaultSyntaxHighlighter Value="None"/>
       </Unit93>
       <Unit94>
         <Filename Value="..\..\Compile\Test Data\CSV Sample Data\Plan @ EL -19202\LYNX - 2010-05-07 04-29-34.survey"/>
         <EditorIndex Value="-1"/>
         <UsageCount Value="1"/>
-        <DefaultSyntaxHighlighter Value="None"/>
       </Unit94>
       <Unit95>
         <Filename Value="B:\lazarus-ccr\components\fpexif\fpemetadata.pas"/>
@@ -780,7 +769,6 @@
         <TopLine Value="10"/>
         <CursorPos X="53" Y="27"/>
         <UsageCount Value="2"/>
-        <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit102>
       <Unit103>
         <Filename Value="B:\fpc\packages\rtl-objpas\src\inc\strutils.pp"/>
@@ -1303,7 +1291,6 @@
         <TopLine Value="1947"/>
         <CursorPos X="3" Y="1975"/>
         <UsageCount Value="6"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit175>
       <Unit176>
         <Filename Value="B:\fpc\packages\fcl-db\src\dbase\dbf_prsdef.pas"/>
@@ -1649,15 +1636,17 @@
       <Unit223>
         <Filename Value="..\..\InspectorMike-common\Support\StringSupport.pas"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="4"/>
+        <TopLine Value="344"/>
+        <CursorPos X="3" Y="348"/>
         <UsageCount Value="10"/>
       </Unit223>
       <Unit224>
         <Filename Value="..\..\InspectorMike-common\Support\FileSupport.pas"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="37"/>
-        <CursorPos X="17" Y="46"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="72"/>
+        <CursorPos X="10" Y="90"/>
         <UsageCount Value="10"/>
+        <Loaded Value="True"/>
       </Unit224>
       <Unit225>
         <Filename Value="B:\Apps\Dev\lazarus_trunk\lazarus\lcl\controls.pp"/>
@@ -1702,8 +1691,8 @@
       <Unit230>
         <Filename Value="B:\Apps\Dev\lazarus_trunk\fpcsrc\rtl\objpas\sysutils\sysstrh.inc"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="282"/>
-        <CursorPos X="10" Y="293"/>
+        <TopLine Value="64"/>
+        <CursorPos X="10" Y="83"/>
         <UsageCount Value="10"/>
       </Unit230>
       <Unit231>
@@ -1734,8 +1723,48 @@
         <CursorPos X="10" Y="28"/>
         <UsageCount Value="12"/>
       </Unit234>
+      <Unit235>
+        <Filename Value="B:\Apps\Dev\lazarus_trunk\fpcsrc\rtl\objpas\sysutils\sysstr.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="237"/>
+        <CursorPos X="3" Y="244"/>
+        <UsageCount Value="10"/>
+      </Unit235>
     </Units>
-    <JumpHistory HistoryIndex="-1"/>
+    <JumpHistory Count="8" HistoryIndex="7">
+      <Position1>
+        <Filename Value="Classes\TagMultimedia.pas"/>
+        <Caret Line="122" Column="42" TopLine="89"/>
+      </Position1>
+      <Position2>
+        <Filename Value="Display\FormFileRenamer2.pas"/>
+        <Caret Line="823" Column="26" TopLine="814"/>
+      </Position2>
+      <Position3>
+        <Filename Value="Display\FormFileRenamer2.pas"/>
+        <Caret Line="536" Column="3" TopLine="531"/>
+      </Position3>
+      <Position4>
+        <Filename Value="..\..\InspectorMike-common\Support\FileSupport.pas"/>
+        <Caret Line="90" Column="17" TopLine="88"/>
+      </Position4>
+      <Position5>
+        <Filename Value="..\..\InspectorMike-common\Support\FileSupport.pas"/>
+        <Caret Line="301" Column="18" TopLine="299"/>
+      </Position5>
+      <Position6>
+        <Filename Value="Display\DialogConvertVideo.pas"/>
+        <Caret Line="286" Column="64" TopLine="272"/>
+      </Position6>
+      <Position7>
+        <Filename Value="Display\DialogConvertVideo.pas"/>
+        <Caret Line="293" TopLine="275"/>
+      </Position7>
+      <Position8>
+        <Filename Value="Classes\TagMultimedia.pas"/>
+        <Caret Line="122" Column="42" TopLine="89"/>
+      </Position8>
+    </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes ActiveMode="default"/>
