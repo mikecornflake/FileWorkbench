@@ -25,15 +25,13 @@
         <UsageCount Value="200"/>
       </Unit1>
       <Unit2>
-        <Filename Value="Display\formfileworkbench.pas"/>
+        <Filename Value="Display\FormFileWorkbench.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmFileWorkbench"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UnitName Value="FormFileWorkbench"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="881"/>
-        <CursorPos X="20" Y="902"/>
+        <TopLine Value="82"/>
+        <CursorPos X="19" Y="105"/>
         <UsageCount Value="200"/>
         <Bookmarks Count="1">
           <Item0 Y="840" ID="1"/>
@@ -110,9 +108,10 @@
         <ComponentName Value="dlgConvertVideo"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="276"/>
-        <CursorPos Y="281"/>
+        <TopLine Value="317"/>
+        <CursorPos X="21" Y="350"/>
         <UsageCount Value="98"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -1733,7 +1732,7 @@
         <UsageCount Value="10"/>
       </Unit235>
     </Units>
-    <JumpHistory Count="6" HistoryIndex="5">
+    <JumpHistory Count="10" HistoryIndex="9">
       <Position1>
         <Filename Value="Classes\TagMultimedia.pas"/>
         <Caret Line="122" Column="42" TopLine="89"/>
@@ -1758,6 +1757,22 @@
         <Filename Value="Classes\TagMultimedia.pas"/>
         <Caret Line="122" Column="42" TopLine="89"/>
       </Position6>
+      <Position7>
+        <Filename Value="Display\FormFileWorkbench.pas"/>
+        <Caret Line="892" Column="9" TopLine="888"/>
+      </Position7>
+      <Position8>
+        <Filename Value="Display\FormFileWorkbench.pas"/>
+        <Caret Line="105" Column="19" TopLine="82"/>
+      </Position8>
+      <Position9>
+        <Filename Value="Display\DialogConvertVideo.pas"/>
+        <Caret Line="70" Column="21" TopLine="37"/>
+      </Position9>
+      <Position10>
+        <Filename Value="Display\DialogConvertVideo.pas"/>
+        <Caret Line="339" Column="17" TopLine="317"/>
+      </Position10>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

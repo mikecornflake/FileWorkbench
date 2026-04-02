@@ -85,7 +85,6 @@
         <ComponentName Value="frmFileWorkbench"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UnitName Value="FormFileWorkbench"/>
       </Unit2>
       <Unit3>
         <Filename Value="Classes\Tags.pas"/>

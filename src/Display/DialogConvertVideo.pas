@@ -48,7 +48,7 @@ Uses Tags, BufDataset, DBSUpport, ffmpegSupport, FormFileWorkbench, OSSupport,
 Procedure TdlgConvertVideo.FormCreate(Sender: TObject);
 Begin
   pcMain.ActivePage := tsMain;
-  btnStart.Enabled := frmRenamer.ProcessMeta;
+  btnStart.Enabled := frmFileWorkbench.ProcessMeta;
 End;
 
 Procedure TdlgConvertVideo.ConvertingVideo(Sender: TObject);
@@ -67,7 +67,7 @@ Procedure TdlgConvertVideo.btnFixDateTimeClick(Sender: TObject);
   Procedure Status(AStatus: String);
   Begin
     memResults.Lines.Add(AStatus);
-    frmRenamer.Status := AStatus;
+    frmFileWorkbench.Status := AStatus;
   End;
 
   Function SetFileDate(Const AFilename: String; ADate: TDateTime): Boolean;
@@ -89,8 +89,8 @@ Begin
   oDataset := TagManager.Dataset;
 
   pbFiles.Style := pbstMarquee;
-  frmRenamer.pbMain.Position := 0;
-  frmRenamer.pbMain.Max := oDataset.RecordCount;
+  frmFileWorkbench.pbMain.Position := 0;
+  frmFileWorkbench.pbMain.Max := oDataset.RecordCount;
 
   pcMain.ActivePage := tsResults;
 
@@ -201,7 +201,7 @@ Begin
           [TimeToStr(Now()), oDataset.RecNo, oDataset.RecordCount, sFile + sFileExt]));
 
       oDataset.Next;
-      frmRenamer.pbMain.Position := frmRenamer.pbMain.Position + 1;
+      frmFileWorkbench.pbMain.Position := frmFileWorkbench.pbMain.Position + 1;
 
       // Ugg
       Application.ProcessMessages;
@@ -212,12 +212,12 @@ Begin
     oDataset.EnableControls;
 
     pbFiles.Style := pbstNormal;
-    frmRenamer.pbMain.Position := 0;
+    frmFileWorkbench.pbMain.Position := 0;
 
     Cursor := crDefault;
     Screen.Cursor := crDefault;
 
-    btnStart.Enabled := frmRenamer.ProcessMeta;
+    btnStart.Enabled := frmFileWorkbench.ProcessMeta;
     btnFixDateTime.Enabled := True;
     btnClose.Enabled := True;
   End;
@@ -256,15 +256,15 @@ Var
   Procedure Status(AStatus: String);
   Begin
     memResults.Lines.Add(AStatus);
-    frmRenamer.Status := AStatus;
+    frmFileWorkbench.Status := AStatus;
   End;
 
 Begin
   oDataset := TagManager.Dataset;
 
   pbFiles.Style := pbstMarquee;
-  frmRenamer.pbMain.Position := 0;
-  frmRenamer.pbMain.Max := oDataset.RecordCount;
+  frmFileWorkbench.pbMain.Position := 0;
+  frmFileWorkbench.pbMain.Max := oDataset.RecordCount;
 
   pcMain.ActivePage := tsResults;
 
@@ -322,7 +322,7 @@ Begin
             sTemp := RunEx(IncludeSlash(FFmpegPath) + 'ffmpeg.exe', oParams,
               True, @ConvertingVideo);
 
-            frmRenamer.Status := sTemp;
+            frmFileWorkbench.Status := sTemp;
 
             Status(Format('%s: %d of %d Converted [%s]', [TimeToStr(Now()),
               oDataset.RecNo, oDataset.RecordCount, sFile + sFileExt]));
@@ -336,7 +336,7 @@ Begin
           [TimeToStr(Now()), oDataset.RecNo, oDataset.RecordCount, sFile + sFileExt]));
 
       oDataset.Next;
-      frmRenamer.pbMain.Position := frmRenamer.pbMain.Position + 1;
+      frmFileWorkbench.pbMain.Position := frmFileWorkbench.pbMain.Position + 1;
 
       // Ugg
       Application.ProcessMessages;
@@ -347,7 +347,7 @@ Begin
     oDataset.EnableControls;
 
     pbFiles.Style := pbstNormal;
-    frmRenamer.pbMain.Position := 0;
+    frmFileWorkbench.pbMain.Position := 0;
 
     Cursor := crDefault;
     Screen.Cursor := crDefault;
