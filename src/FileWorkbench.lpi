@@ -8,13 +8,13 @@
         <CompatibilityMode Value="True"/>
       </Flags>
       <SessionStorage Value="InProjectDir"/>
-      <Title Value="File Renamer 2"/>
+      <Title Value="File Workbench"/>
       <Scaled Value="True"/>
       <ResourceType Value="res"/>
       <UseXPManifest Value="True"/>
       <XPManifest>
         <DpiAware Value="True"/>
-        <TextName Value="InspectorMike.Utilities.FileRenamer"/>
+        <TextName Value="InspectorMike.Utilities.FileWorkbench"/>
       </XPManifest>
       <Icon Value="0"/>
     </General>
@@ -72,7 +72,7 @@
     </RequiredPackages>
     <Units Count="13">
       <Unit0>
-        <Filename Value="FileRenamer2.lpr"/>
+        <Filename Value="FileWorkbench.lpr"/>
         <IsPartOfProject Value="True"/>
       </Unit0>
       <Unit1>
@@ -80,11 +80,12 @@
         <IsPartOfProject Value="True"/>
       </Unit1>
       <Unit2>
-        <Filename Value="Display\FormFileRenamer2.pas"/>
+        <Filename Value="Display\FormFileWorkbench.pas"/>
         <IsPartOfProject Value="True"/>
-        <ComponentName Value="frmRenamer"/>
+        <ComponentName Value="frmFileWorkbench"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
+        <UnitName Value="FormFileWorkbench"/>
       </Unit2>
       <Unit3>
         <Filename Value="Classes\Tags.pas"/>
@@ -141,7 +142,7 @@
     <Version Value="11"/>
     <PathDelim Value="\"/>
     <Target>
-      <Filename Value="$(TestDir)\$NameOnly($(ProjFile))\$NameOnly($(ProjFile))"/>
+      <Filename Value="$(TestDir)\$NameOnly($(ProjFile))\FileWorkbench"/>
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>

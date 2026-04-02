@@ -38,7 +38,7 @@ Type
 
 Implementation
 
-Uses Tags, BufDataset, DBSUpport, ffmpegSupport, FormFileRenamer2, OSSupport,
+Uses Tags, BufDataset, DBSUpport, ffmpegSupport, FormFileWorkbench, OSSupport,
   FileSupport, StringSupport, Process, DOS;
 
   {$R *.lfm}

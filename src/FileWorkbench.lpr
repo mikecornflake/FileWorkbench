@@ -1,4 +1,4 @@
-Program FileRenamer2;
+Program FileWorkbench;
 
 {$mode objfpc}{$H+}
 {$DEFINE UseCThreads}
@@ -10,20 +10,18 @@ Uses
   Forms,
   lazcontrols,
   SysUtils,
-  FormFileRenamer2,
   Tags,
   TagMultimedia,
   TagEXIF,
-  TagVideoNFO;
+  TagVideoNFO, FormFileWorkbench;
 
   {$R *.res}
 
 Begin
   SetHeapTraceOutput(ChangeFileExt(Application.Exename, '.trc'));
-  Application.Scaled := True;
-  Application.Title := 'File Renamer 2';
+  Application.Scaled:=True;
+  Application.Title:='File Workbench';
   RequireDerivedFormResource := True;
   Application.Initialize;
-  Application.CreateForm(TfrmRenamer, frmRenamer);
   Application.Run;
 End.
