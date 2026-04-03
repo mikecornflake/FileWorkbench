@@ -125,57 +125,47 @@ Begin
   If Not FileExists(sFilename) Then
     Exit;
 
-  //fpExif is not threadsafe.  Ensure we only read one EXIF file at a time
-  EnterCriticalSection(LCreateEXIFLock);
-  Try
-    FImgInfo.LoadFromFile(sFilename);
+  FImgInfo.LoadFromFile(sFilename);
 
-    If FImgInfo.HasExif Then
+  If FImgInfo.HasExif Then
+  Begin
+    For i := 0 To FFields.Count - 1 Do
     Begin
-      For i := 0 To FFields.Count - 1 Do
-      Begin
-        sMetaTag := FFields.Names[i];
-        sExifTag := FFields.ValueFromIndex[i];
+      sMetaTag := FFields.Names[i];
+      sExifTag := FFields.ValueFromIndex[i];
 
-        SetMetaFromExif(sMetaTag, sExifTag);
-      End;
-
-      oTemp := TStringList.Create;
-      Try
-        FImgInfo.ExifData.ExportOptions :=
-          [eoShowTagName, eoDecodeValue, eoTruncateBinary, eoBinaryAsASCII];
-        FImgInfo.ExifData.ExportToStrings(oTemp, '=');
-
-        Tag['EXIF'] := oTemp.Text;
-      Finally
-        oTemp.Free;
-      End;
-
-      FHasTags := True;
+      SetMetaFromExif(sMetaTag, sExifTag);
     End;
 
-    If FImgInfo.HasIptc Then
-    Begin
-      oTemp := TStringList.Create;
-      Try
-        FImgInfo.IptcData.ExportToStrings(oTemp, [eoShowTagName, eoDecodeValue,
-          eoTruncateBinary, eoBinaryAsASCII], '=');
+    oTemp := TStringList.Create;
+    Try
+      FImgInfo.ExifData.ExportOptions :=
+        [eoShowTagName, eoDecodeValue, eoTruncateBinary, eoBinaryAsASCII];
+      FImgInfo.ExifData.ExportToStrings(oTemp, '=');
 
-        Tag['EXIF_IPTC'] := oTemp.Text;
-      Finally
-        oTemp.Free;
-      End;
+      Tag['EXIF'] := oTemp.Text;
+    Finally
+      oTemp.Free;
     End;
-  Finally
-    LeaveCriticalSection(LCreateEXIFLock);
+
+    FHasTags := True;
+  End;
+
+  If FImgInfo.HasIptc Then
+  Begin
+    oTemp := TStringList.Create;
+    Try
+      FImgInfo.IptcData.ExportToStrings(oTemp, [eoShowTagName, eoDecodeValue,
+        eoTruncateBinary, eoBinaryAsASCII], '=');
+
+      Tag['EXIF_IPTC'] := oTemp.Text;
+    Finally
+      oTemp.Free;
+    End;
   End;
 End;
 
 Initialization
-  InitCriticalSection(LCreateEXIFLock);
   TagManager.Register(TTagEXIF, ['.jpg', '.jpeg', '.tiff']);
-
-Finalization
-  DoneCriticalsection(LCreateEXIFLock);
 
 End.
