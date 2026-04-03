@@ -24,12 +24,12 @@
     <VersionInfo>
       <UseVersionInfo Value="True"/>
       <AutoIncrementBuild Value="True"/>
-      <MajorVersionNr Value="2"/>
-      <MinorVersionNr Value="2"/>
-      <BuildNr Value="207"/>
+      <MajorVersionNr Value="1"/>
+      <MinorVersionNr Value="1"/>
+      <BuildNr Value="213"/>
       <Language Value="0809"/>
       <Attributes pvaDebug="True"/>
-      <StringTable CompanyName="Inspector Mike Pty Ltd" FileDescription="File Renamer and Metadata processor" LegalCopyright="(c) 2022" ProductName="FileRenamer2"/>
+      <StringTable Comments="File Renamer and Metadata processor" CompanyName="Inspector Mike Pty Ltd" FileDescription="File Workbench" LegalCopyright="(c) 2022" ProductName="FileRenamer2"/>
     </VersionInfo>
     <BuildModes Count="1">
       <Item1 Name="Default" Default="True"/>

@@ -9,11 +9,8 @@ Uses
   Interfaces, // this includes the LCL widgetset
   Forms,
   lazcontrols,
-  SysUtils,
-  Tags,
-  TagMultimedia,
-  TagEXIF,
-  TagVideoNFO, FormFileWorkbench;
+  SysUtils, FormFileWorkbench,
+  Tags, TagVideoNFO, TagEXIF, TagMultimedia;
 
   {$R *.res}
 
@@ -23,5 +20,6 @@ Begin
   Application.Title:='File Workbench';
   RequireDerivedFormResource := True;
   Application.Initialize;
+  Application.CreateForm(TfrmFileWorkbench, frmFileWorkbench);
   Application.Run;
 End.

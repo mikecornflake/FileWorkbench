@@ -783,7 +783,7 @@ Begin
   pbMain.Visible := False;
   If Assigned(FFolderParser) Then
   Begin
-    Caption := Format('File Renamer 2: [%s: %s]', [FFilter, FRootpath]);
+    Caption := Format('File Workbench: [%s: %s]', [FFilter, FRootpath]);
     Status := 'Completed scan:';
     For i := 0 To FFolderParser.ExtStats.Count - 1 Do
       If FFolderParser.ExtStats.Data[i] > 0 Then
