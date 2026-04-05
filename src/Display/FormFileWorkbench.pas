@@ -661,7 +661,10 @@ Var
 Begin
   oDlg := TdlgScanFolder.Create(Self);
   Try
-    oDlg.Folder := AFolder;
+    // Fix issue if directory does not exist
+    If DirectoryExists(AFolder) Then
+      oDlg.Folder := AFolder;
+
     oDlg.Filter := AFilter;
     oDlg.ProcessMeta := FProcessMeta;
 
