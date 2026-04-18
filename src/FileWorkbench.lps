@@ -37,15 +37,14 @@
           <Item0 Y="843" ID="1"/>
         </Bookmarks>
         <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit2>
       <Unit3>
         <Filename Value="Classes\Tags.pas"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="4"/>
-        <TopLine Value="181"/>
-        <CursorPos X="14" Y="58"/>
+        <TopLine Value="33"/>
+        <CursorPos X="27" Y="58"/>
         <UsageCount Value="200"/>
         <Loaded Value="True"/>
       </Unit3>
@@ -68,8 +67,8 @@
         <Filename Value="Classes\TagEXIF.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="3"/>
-        <TopLine Value="126"/>
-        <CursorPos X="39" Y="96"/>
+        <TopLine Value="42"/>
+        <CursorPos X="22" Y="161"/>
         <UsageCount Value="200"/>
         <Loaded Value="True"/>
       </Unit6>
@@ -84,7 +83,6 @@
         <CursorPos X="26" Y="20"/>
         <UsageCount Value="200"/>
         <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit7>
       <Unit8>
         <Filename Value="Classes\ThreadFolderParser.pas"/>
@@ -113,7 +111,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="212"/>
         <CursorPos X="20" Y="279"/>
-        <UsageCount Value="106"/>
+        <UsageCount Value="107"/>
       </Unit10>
       <Unit11>
         <Filename Value="Display\DialogRenameOptions.pas"/>
@@ -123,13 +121,13 @@
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="14" Y="5"/>
-        <UsageCount Value="74"/>
+        <UsageCount Value="75"/>
       </Unit11>
       <Unit12>
         <Filename Value="Classes\TagVideoNFO.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="62"/>
+        <UsageCount Value="63"/>
       </Unit12>
       <Unit13>
         <Filename Value="B:\fpc\packages\fcl-db\src\base\bufdataset_parser.pp"/>
@@ -1719,7 +1717,7 @@
         <EditorIndex Value="7"/>
         <TopLine Value="148"/>
         <CursorPos X="11" Y="169"/>
-        <UsageCount Value="13"/>
+        <UsageCount Value="14"/>
         <Loaded Value="True"/>
       </Unit234>
       <Unit235>
@@ -1743,7 +1741,7 @@
         <EditorIndex Value="5"/>
         <TopLine Value="178"/>
         <CursorPos X="11" Y="191"/>
-        <UsageCount Value="13"/>
+        <UsageCount Value="14"/>
         <Loaded Value="True"/>
       </Unit237>
       <Unit238>
@@ -1775,7 +1773,7 @@
         <EditorIndex Value="6"/>
         <TopLine Value="57"/>
         <CursorPos X="41" Y="71"/>
-        <UsageCount Value="11"/>
+        <UsageCount Value="12"/>
         <Loaded Value="True"/>
       </Unit241>
       <Unit242>
@@ -1783,7 +1781,7 @@
         <EditorIndex Value="8"/>
         <TopLine Value="312"/>
         <CursorPos X="13" Y="330"/>
-        <UsageCount Value="11"/>
+        <UsageCount Value="12"/>
         <Loaded Value="True"/>
       </Unit242>
       <Unit243>
@@ -1791,7 +1789,7 @@
         <EditorIndex Value="9"/>
         <TopLine Value="154"/>
         <CursorPos X="9" Y="158"/>
-        <UsageCount Value="11"/>
+        <UsageCount Value="12"/>
         <Loaded Value="True"/>
       </Unit243>
       <Unit244>
@@ -1806,11 +1804,11 @@
         <EditorIndex Value="2"/>
         <TopLine Value="1579"/>
         <CursorPos X="3" Y="1581"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="11"/>
         <Loaded Value="True"/>
       </Unit245>
     </Units>
-    <JumpHistory Count="21" HistoryIndex="20">
+    <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
         <Filename Value="Classes\TagEXIF.pas"/>
         <Caret Line="45" Column="20" TopLine="31"/>
@@ -1894,6 +1892,42 @@
         <Filename Value="B:\Apps\Dev\lazarus_trunk\lazarus\lcl\editbtn.pas"/>
         <Caret Line="500" Column="14" TopLine="482"/>
       </Position21>
+      <Position22>
+        <Filename Value="Classes\TagEXIF.pas"/>
+        <Caret Line="86" TopLine="70"/>
+      </Position22>
+      <Position23>
+        <Filename Value="Classes\TagEXIF.pas"/>
+        <Caret Line="99" Column="23" TopLine="81"/>
+      </Position23>
+      <Position24>
+        <Filename Value="Classes\TagEXIF.pas"/>
+        <Caret Line="123" Column="27" TopLine="115"/>
+      </Position24>
+      <Position25>
+        <Filename Value="Classes\TagEXIF.pas"/>
+        <Caret Line="128" Column="22" TopLine="115"/>
+      </Position25>
+      <Position26>
+        <Filename Value="Classes\TagEXIF.pas"/>
+        <Caret Line="161" Column="22" TopLine="139"/>
+      </Position26>
+      <Position27>
+        <Filename Value="Classes\Tags.pas"/>
+        <Caret Line="69" Column="14" TopLine="54"/>
+      </Position27>
+      <Position28>
+        <Filename Value="Classes\Tags.pas"/>
+        <Caret Line="46" Column="15" TopLine="27"/>
+      </Position28>
+      <Position29>
+        <Filename Value="Classes\Tags.pas"/>
+        <Caret Line="256" Column="3" TopLine="252"/>
+      </Position29>
+      <Position30>
+        <Filename Value="Classes\TagEXIF.pas"/>
+        <Caret Line="161" Column="22" TopLine="42"/>
+      </Position30>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
@@ -1909,15 +1943,6 @@
     </HistoryLists>
   </ProjectSession>
   <Debugging>
-    <BreakPoints>
-      <Item>
-        <Kind Value="bpkSource"/>
-        <WatchScope Value="wpsLocal"/>
-        <WatchKind Value="wpkWrite"/>
-        <Source Value="Display\FormFileRenamer2.pas"/>
-        <Line Value="890"/>
-      </Item>
-    </BreakPoints>
     <Watches>
       <Item>
         <Expression Value="i"/>

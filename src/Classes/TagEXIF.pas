@@ -29,9 +29,6 @@ Implementation
 
 { TTagEXIF }
 
-Var
-  LCreateEXIFLock: TRTLCriticalSection;
-
 Constructor TTagEXIF.Create;
 Var
   sMetaTag: String;
@@ -68,6 +65,9 @@ Begin
       AddTag(sMetaTag, ftString, 100);
   End;
 
+  // IPTC (Early adoption, may need to extend FFields usage in ParseFile)
+  AddTag('IPTC_Caption', ftString, 100);
+
   // Finally the summary fields
   AddTag('EXIF', ftString, 4096, True, True);
   AddTag('EXIF_IPTC', ftString, 4096, True, True);
@@ -82,8 +82,23 @@ Begin
 End;
 
 Function TTagEXIF.Name: String;
+
+  Function AddTag(sInput: String; sAdd: String): String;
+  Begin
+    If sInput = '' Then
+      Result := sAdd
+    Else
+      Result := sInput + ', ' + sAdd;
+  End;
+
 Begin
-  Result := 'EXIF';
+  Result := '';
+
+  If FImgInfo.HasExif Then
+    Result := AddTag(Result, 'EXIF');
+
+  If FImgInfo.HasIptc Then
+    Result := AddTag(Result, 'IPTC');
 End;
 
 Function TTagEXIF.Writeable: Boolean;
@@ -100,19 +115,6 @@ Function TTagEXIF.ParseFile(sFilename: String): Boolean;
     oTag := FImgInfo.ExifData.TagByName[AExifTag];
     If assigned(oTag) Then
       Tag[AMetaTag] := oTag.AsString;
-  End;
-
-  Function ExifAsNameValue(AIndex: Integer): String;
-  Var
-    oTag: TTag;
-  Begin
-    oTag := FImgInfo.ExifData.TagByIndex[AIndex];
-    Try
-      Result := Format('%s=%s', [oTag.Name, oTag.AsString]) + LineEnding;
-    Except
-      On E: Exception Do
-        Result := Format('%s=%s', [oTag.Name, E.Message]) + LineEnding;
-    End;
   End;
 
 Var
@@ -159,6 +161,9 @@ Begin
         eoTruncateBinary, eoBinaryAsASCII], '=');
 
       Tag['EXIF_IPTC'] := oTemp.Text;
+
+      // Easier than querying FImgInfo.IptcData...
+      Tag['IPTC_Caption'] := oTemp.Values['Image caption'];
     Finally
       oTemp.Free;
     End;
