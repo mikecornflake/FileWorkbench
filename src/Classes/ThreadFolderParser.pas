@@ -318,7 +318,7 @@ Var
   Function FolderAtLevel(iLevel: Integer): String;
   Begin
     If iLevel > 0 Then
-      Result := ExtractField(AFolder, '\', iLevel)
+      Result := ExtractField(AFolder, PathDelim, iLevel)
     Else
       Result := '';
   End;
@@ -343,7 +343,7 @@ Begin
   End;
 
   // And now we process the files in this Folder
-  iMaxLevel := Count('\', AFolder);
+  iMaxLevel := Count(PathDelim, AFolder);
   sParent := FolderAtLevel(iMaxLevel - 1);
   sParent2 := FolderAtLevel(iMaxLevel - 2);
   iFileCountInFolder := 0;
