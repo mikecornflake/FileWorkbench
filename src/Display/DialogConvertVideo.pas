@@ -319,7 +319,7 @@ Begin
                 oParams[i] := Format('"%s"', [sPath + sFile + '.mp4']);
             End;
 
-            sTemp := RunEx(IncludeSlash(FFmpegPath) + 'ffmpeg.exe', oParams,
+            sTemp := RunAndCapture(IncludeSlash(FFmpegPath) + 'ffmpeg.exe', oParams,
               True, @ConvertingVideo);
 
             frmFileWorkbench.Status := sTemp;
