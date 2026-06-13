@@ -511,7 +511,7 @@ Begin
   For i := 0 To FMetaFileHandlerClassByExt.Count - 1 Do
   Begin
     sTemp := FMetaFileHandlerClassByExt.NameOfIndex(i);
-    If sTemp = sExt Then
+    If CompareText(sTemp, sExt)=0 Then
     Begin
       oClass := TMetaFileHandlerClass(FMetaFileHandlerClassByExt.Items[i]);
       oMetaFileHandler := oClass.Create;
