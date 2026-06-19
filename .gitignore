@@ -1,4 +1,5 @@
-src/FileWorkbench.lps
-src/FileWorkbench.lps
-src/FileWorkbench.lps
-src/FileWorkbench.lps
+*.o
+*.ppu
+*.lps
+*.exe
+**/lib/
