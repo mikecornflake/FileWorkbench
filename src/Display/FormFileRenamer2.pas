@@ -14,7 +14,7 @@ Type
 
   { TfrmRenamer }
 
-  TfrmRenamer = Class(TfrmMain)
+  TfrmRenamer = Class(TFormMain)
     btnExpression: TToolButton;
     btnProperCase: TToolButton;
     btnLowerCase: TToolButton;

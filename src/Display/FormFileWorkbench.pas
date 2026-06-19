@@ -14,7 +14,7 @@ Type
 
   { TfrmFileWorkbench }
 
-  TfrmFileWorkbench = Class(TfrmMain)
+  TfrmFileWorkbench = Class(TFormMain)
     btnExpression: TToolButton;
     btnProperCase: TToolButton;
     btnLowerCase: TToolButton;
