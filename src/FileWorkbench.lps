@@ -2,7 +2,7 @@
 <CONFIG>
   <ProjectSession>
     <PathDelim Value="\"/>
-    <Version Value="12"/>
+    <Version Value="13"/>
     <BuildModes Active="Default">
       <SessionMatrixOptions Count="1">
         <Item1 ID="990724149927" Modes="Default" Value="-gw2"/>
@@ -11,14 +11,12 @@
     <Units Count="246">
       <Unit0>
         <Filename Value="FileWorkbench.lpr"/>
-        <IsPartOfProject Value="True"/>
         <UsageCount Value="200"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="9" Y="4"/>
       </Unit0>
       <Unit1>
         <Filename Value="Classes\StringScriptor.pas"/>
-        <IsPartOfProject Value="True"/>
         <UsageCount Value="200"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="60"/>
@@ -26,38 +24,33 @@
       </Unit1>
       <Unit2>
         <Filename Value="Display\FormFileWorkbench.pas"/>
-        <IsPartOfProject Value="True"/>
         <ComponentName Value="frmFileWorkbench"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <Loaded Value="True"/>
         <UsageCount Value="200"/>
-        <TopLine Value="724"/>
-        <CursorPos X="3" Y="741"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="59" Y="10"/>
         <Bookmarks Count="1">
           <Item0 Y="843" ID="1"/>
         </Bookmarks>
       </Unit2>
       <Unit3>
         <Filename Value="Classes\Tags.pas"/>
-        <IsPartOfProject Value="True"/>
         <Loaded Value="True"/>
         <UsageCount Value="200"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="5"/>
-        <TopLine Value="487"/>
-        <CursorPos X="42" Y="501"/>
+        <TopLine Value="488"/>
+        <CursorPos X="15" Y="488"/>
       </Unit3>
       <Unit4>
         <Filename Value="Classes\TagMultimedia.pas"/>
-        <IsPartOfProject Value="True"/>
         <UsageCount Value="201"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="19"/>
       </Unit4>
       <Unit5>
         <Filename Value="Classes\uShellDragDrop.pp"/>
-        <IsPartOfProject Value="True"/>
         <UsageCount Value="201"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="268"/>
@@ -65,7 +58,6 @@
       </Unit5>
       <Unit6>
         <Filename Value="Classes\TagEXIF.pas"/>
-        <IsPartOfProject Value="True"/>
         <Loaded Value="True"/>
         <UsageCount Value="200"/>
         <EditorIndex Value="4"/>
@@ -74,7 +66,6 @@
       </Unit6>
       <Unit7>
         <Filename Value="Display\DialogScanFolder.pas"/>
-        <IsPartOfProject Value="True"/>
         <ComponentName Value="dlgScanFolder"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
@@ -86,7 +77,6 @@
       </Unit7>
       <Unit8>
         <Filename Value="Classes\ThreadFolderParser.pas"/>
-        <IsPartOfProject Value="True"/>
         <Loaded Value="True"/>
         <UsageCount Value="200"/>
         <EditorIndex Value="1"/>
@@ -98,14 +88,12 @@
       </Unit8>
       <Unit9>
         <Filename Value="Classes\TagFileSystem.pas"/>
-        <IsPartOfProject Value="True"/>
         <UsageCount Value="200"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="4"/>
       </Unit9>
       <Unit10>
         <Filename Value="Display\DialogConvertVideo.pas"/>
-        <IsPartOfProject Value="True"/>
         <ComponentName Value="dlgConvertVideo"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
@@ -118,7 +106,6 @@
       </Unit10>
       <Unit11>
         <Filename Value="Display\DialogRenameOptions.pas"/>
-        <IsPartOfProject Value="True"/>
         <ComponentName Value="dlgRenameOptions"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
@@ -128,7 +115,6 @@
       </Unit11>
       <Unit12>
         <Filename Value="Classes\TagVideoNFO.pas"/>
-        <IsPartOfProject Value="True"/>
         <UsageCount Value="63"/>
         <EditorIndex Value="-1"/>
       </Unit12>
@@ -1813,124 +1799,124 @@
     </Units>
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
-        <Filename Value="Display\FormFileWorkbench.pas"/>
-        <Caret Line="770" Column="33" TopLine="763"/>
-      </Position1>
-      <Position2>
         <Filename Value="Classes\TagEXIF.pas"/>
         <Caret Line="94" Column="28" TopLine="83"/>
-      </Position2>
-      <Position3>
+      </Position1>
+      <Position2>
         <Filename Value="Classes\Tags.pas"/>
         <Caret Line="521" Column="24" TopLine="498"/>
-      </Position3>
-      <Position4>
+      </Position2>
+      <Position3>
         <Filename Value="Classes\TagEXIF.pas"/>
         <Caret Line="133" Column="32" TopLine="78"/>
-      </Position4>
-      <Position5>
+      </Position3>
+      <Position4>
         <Filename Value="..\..\..\Pascal_third_party\lazarus-ccr\components\fpexif\fpeexifdata.pas"/>
         <Caret Line="109" Column="15" TopLine="92"/>
+      </Position4>
+      <Position5>
+        <Filename Value="Display\FormFileWorkbench.pas"/>
+        <Caret Line="771" Column="15" TopLine="763"/>
       </Position5>
       <Position6>
         <Filename Value="Display\FormFileWorkbench.pas"/>
-        <Caret Line="771" Column="15" TopLine="763"/>
+        <Caret Line="680" Column="3" TopLine="677"/>
       </Position6>
       <Position7>
         <Filename Value="Display\FormFileWorkbench.pas"/>
-        <Caret Line="680" Column="3" TopLine="677"/>
+        <Caret Line="78" Column="15" TopLine="61"/>
       </Position7>
       <Position8>
         <Filename Value="Display\FormFileWorkbench.pas"/>
-        <Caret Line="78" Column="15" TopLine="61"/>
+        <Caret Line="664" Column="45" TopLine="657"/>
       </Position8>
       <Position9>
-        <Filename Value="Display\FormFileWorkbench.pas"/>
-        <Caret Line="664" Column="45" TopLine="657"/>
-      </Position9>
-      <Position10>
         <Filename Value="Display\DialogScanFolder.pas"/>
         <Caret Line="20" Column="26" TopLine="4"/>
+      </Position9>
+      <Position10>
+        <Filename Value="B:\Apps\Dev\lazarus_trunk\lazarus\lcl\editbtn.pas"/>
+        <Caret Line="502" Column="22" TopLine="485"/>
       </Position10>
       <Position11>
         <Filename Value="B:\Apps\Dev\lazarus_trunk\lazarus\lcl\editbtn.pas"/>
-        <Caret Line="502" Column="22" TopLine="485"/>
+        <Caret Line="1606" Column="3" TopLine="1606"/>
       </Position11>
       <Position12>
         <Filename Value="B:\Apps\Dev\lazarus_trunk\lazarus\lcl\editbtn.pas"/>
-        <Caret Line="1606" Column="3" TopLine="1606"/>
+        <Caret Line="500" Column="14" TopLine="482"/>
       </Position12>
       <Position13>
-        <Filename Value="B:\Apps\Dev\lazarus_trunk\lazarus\lcl\editbtn.pas"/>
-        <Caret Line="500" Column="14" TopLine="482"/>
+        <Filename Value="Classes\TagEXIF.pas"/>
+        <Caret Line="86" TopLine="70"/>
       </Position13>
       <Position14>
         <Filename Value="Classes\TagEXIF.pas"/>
-        <Caret Line="86" TopLine="70"/>
+        <Caret Line="99" Column="23" TopLine="81"/>
       </Position14>
       <Position15>
         <Filename Value="Classes\TagEXIF.pas"/>
-        <Caret Line="99" Column="23" TopLine="81"/>
+        <Caret Line="123" Column="27" TopLine="115"/>
       </Position15>
       <Position16>
         <Filename Value="Classes\TagEXIF.pas"/>
-        <Caret Line="123" Column="27" TopLine="115"/>
+        <Caret Line="128" Column="22" TopLine="115"/>
       </Position16>
       <Position17>
         <Filename Value="Classes\TagEXIF.pas"/>
-        <Caret Line="128" Column="22" TopLine="115"/>
+        <Caret Line="161" Column="22" TopLine="139"/>
       </Position17>
       <Position18>
-        <Filename Value="Classes\TagEXIF.pas"/>
-        <Caret Line="161" Column="22" TopLine="139"/>
+        <Filename Value="Classes\Tags.pas"/>
+        <Caret Line="69" Column="14" TopLine="54"/>
       </Position18>
       <Position19>
         <Filename Value="Classes\Tags.pas"/>
-        <Caret Line="69" Column="14" TopLine="54"/>
+        <Caret Line="46" Column="15" TopLine="27"/>
       </Position19>
       <Position20>
         <Filename Value="Classes\Tags.pas"/>
-        <Caret Line="46" Column="15" TopLine="27"/>
+        <Caret Line="256" Column="3" TopLine="252"/>
       </Position20>
       <Position21>
-        <Filename Value="Classes\Tags.pas"/>
-        <Caret Line="256" Column="3" TopLine="252"/>
-      </Position21>
-      <Position22>
         <Filename Value="Classes\TagEXIF.pas"/>
         <Caret Line="161" Column="22" TopLine="42"/>
-      </Position22>
-      <Position23>
+      </Position21>
+      <Position22>
         <Filename Value="Classes\Tags.pas"/>
         <Caret Line="46" Column="25" TopLine="33"/>
+      </Position22>
+      <Position23>
+        <Filename Value="Display\FormFileWorkbench.pas"/>
+        <Caret Line="672" Column="19" TopLine="657"/>
       </Position23>
       <Position24>
         <Filename Value="Display\FormFileWorkbench.pas"/>
-        <Caret Line="672" Column="19" TopLine="657"/>
+        <Caret Line="79" Column="15" TopLine="62"/>
       </Position24>
       <Position25>
         <Filename Value="Display\FormFileWorkbench.pas"/>
-        <Caret Line="79" Column="15" TopLine="62"/>
+        <Caret Line="741" Column="3" TopLine="724"/>
       </Position25>
       <Position26>
-        <Filename Value="Display\FormFileWorkbench.pas"/>
-        <Caret Line="741" Column="3" TopLine="724"/>
+        <Filename Value="Classes\ThreadFolderParser.pas"/>
+        <Caret Line="63" Column="5" TopLine="29"/>
       </Position26>
       <Position27>
         <Filename Value="Classes\ThreadFolderParser.pas"/>
-        <Caret Line="63" Column="5" TopLine="29"/>
+        <Caret Line="390" Column="28" TopLine="355"/>
       </Position27>
       <Position28>
         <Filename Value="Classes\ThreadFolderParser.pas"/>
-        <Caret Line="390" Column="28" TopLine="355"/>
+        <Caret Line="161" TopLine="125"/>
       </Position28>
       <Position29>
-        <Filename Value="Classes\ThreadFolderParser.pas"/>
-        <Caret Line="161" TopLine="125"/>
-      </Position29>
-      <Position30>
         <Filename Value="Classes\Tags.pas"/>
         <Caret Line="109" Column="15" TopLine="92"/>
+      </Position29>
+      <Position30>
+        <Filename Value="Display\FormFileWorkbench.pas"/>
+        <Caret Line="741" Column="3"/>
       </Position30>
     </JumpHistory>
     <RunParams>
