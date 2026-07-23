@@ -243,7 +243,7 @@ Var
     If Result Then
     Begin
       // OK, FileExists, but does the duration match to within 1 second?
-      oMediaInfo := ffmpegSupport.MediaInfo(sConvertedFile);
+      oMediaInfo := FFmpeg.MediaInfo(sConvertedFile);
 
       // Converted if < 2 sec difference (1 sec keyframe)
       If (oMediaInfo.Filename = sConvertedFile) Then
@@ -296,7 +296,7 @@ Begin
       Else If (Not Converted) Then
       Begin
         // Convert the video;
-        If FFmpegPath <> '' Then
+        If FFmpeg.Folder <> '' Then
         Begin
           Status(Format('%s: %d of %d Converting [%s]', [TimeToStr(Now()),
             oDataset.RecNo, oDataset.RecordCount, sFile + sFileExt]));
@@ -319,7 +319,7 @@ Begin
                 oParams[i] := Format('"%s"', [sPath + sFile + '.mp4']);
             End;
 
-            sTemp := RunAndCapture(IncludeSlash(FFmpegPath) + 'ffmpeg.exe', oParams,
+            sTemp := RunAndCapture(IncludeSlash(FFmpeg.Folder) + 'ffmpeg.exe', oParams,
               True, @ConvertingVideo);
 
             frmFileWorkbench.Status := sTemp;

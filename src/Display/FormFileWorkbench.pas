@@ -284,9 +284,7 @@ Var
   oBookmark: TBookMark;
 Begin
   // TODO put all this in a thread...
-  InitializeFFmpeg;
-
-  If FFmpegAvailable Then
+  If FFmpeg.Available Then
   Begin
     FDataset := TagManager.Dataset;
     pbMain.Max := FDataset.RecordCount;
@@ -311,7 +309,7 @@ Begin
           Begin
             SetStatus(sThumbnail);
 
-            sTemp := CreateThumbnail(sVideoFilename, sThumbnail);
+            sTemp := FFmpeg.CreateThumbnail(sVideoFilename, sThumbnail);
 
             If Trim(sTemp) <> '' Then
             Begin

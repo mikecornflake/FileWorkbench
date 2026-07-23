@@ -64,11 +64,11 @@ Begin
 
   If FileExists(sFilename) Then
   Begin
-    If (FFmpegAvailable) Then
+    If (FFmpeg.Available) Then
     Begin
       sExt := ExtractFileExt(sFilename);
 
-      oMediaInfo := ffmpegSupport.MediaInfo(sFilename);
+      oMediaInfo := FFmpeg.MediaInfo(sFilename);
 
       If oMediaInfo.Filename = sFilename Then
       Begin
@@ -117,8 +117,6 @@ Begin
 End;
 
 Initialization
-  InitializeFFmpeg;
-
   TagManager.Register(TTagMedia, FileExtVideo);
   TagManager.Register(TTagMedia, FileExtImage);
   TagManager.Register(TTagMedia, FileExtAudio);
