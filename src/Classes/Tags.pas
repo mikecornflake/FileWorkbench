@@ -112,7 +112,6 @@ Type
 
     Procedure Register(AMetaFileHandler: TMetaFileHandlerClass; AFileExt: Array Of String);
 
-    // TODO - Implement
     Function Update(AFilename, ATag, AValue: String): Boolean; Overload;
     Function Update(AFilename: String; ATags, AValues: Array Of String): Boolean; Overload;
 
@@ -474,10 +473,11 @@ Begin
 
     If (sField <> 'Count') And (sField <> 'Temp') Then
     Begin
-      // TODO EditMode=Bulk v Immediate code to go here
-      // TODO Need to confirm if this Field is valid to be edited for this FileExt
-      // TODO Design decision - do we want to block edit if no tag
-      //      Or automatically try to add a Tag?
+      // TODO: EditMode=Bulk v Immediate code to go here
+      // TODO: Need to confirm if this Field is valid to be edited for this FileExt
+      // TODO: Design decision - do we want to block edit if no tag
+      //       Or automatically try to add a Tag?
+
       // Current thinking - try to add tag
       Sender.Value := aText;
 
@@ -583,7 +583,7 @@ Var
   iHandler: Integer;
   oClass: TMetaFileHandlerClass;
 Begin
-  // TODO COMPLETE THE WRITING OF TAGS
+  // TODO: Complete the writing of tags (Needs testing to establish current limitations)
   Result := False;
 
   sExt := Lowercase(FFiles.Table['FileExt']);

@@ -64,7 +64,7 @@ Begin
 
   AddTag('Date', ftDateTime, -1, True);
   AddTag('Size', ftLargeint, -1, True);
-  // TODO Attributes
+  // TODO: Include other attributes
 
   AddTag('Path', ftString, 520, True);
   AddTag('Parent', ftString, 260, True);

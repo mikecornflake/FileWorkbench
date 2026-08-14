@@ -283,7 +283,7 @@ Var
   sPath, sBase, sVideoFilename, sThumbnail, sPoster, sTemp: String;
   oBookmark: TBookMark;
 Begin
-  // TODO put all this in a thread...
+  // TODO: put all this in a thread...
   InitializeFFmpeg;
 
   If FFmpegAvailable Then
@@ -325,7 +325,7 @@ Begin
         FDataset.Next;
         pbMain.Position := pbMain.Position + 1;
 
-        // TODO: you're FIRED!
+        // TODO: you're FIRED! (Rehired once thread implemented)
         If (pbMain.Position Mod 100) = 0 Then
         Begin
           Application.ProcessMessages;
@@ -825,8 +825,6 @@ Begin
 
      I missed this, which is why I put in the 'ID" code.
   }
-  // TODO I should remove 'ID' special case code, then find a way of removing
-  //  the columns I want to remain hidden from the TagManager.VisibleField
 
   For i := 0 To fmeGrid.grdSQL.Columns.Count - 1 Do
     fmeGrid.grdSQL.Columns[i].Visible := True;

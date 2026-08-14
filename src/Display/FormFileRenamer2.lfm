@@ -65,7 +65,7 @@ inherited frmRenamer: TfrmRenamer
         end
         object ToolButton5: TToolButton
           Left = 701
-          Height = 40
+          Height = 8
           Top = 0
           Caption = 'ToolButton5'
           ImageIndex = 12
@@ -82,7 +82,7 @@ inherited frmRenamer: TfrmRenamer
         end
         object ToolButton1: TToolButton
           Left = 389
-          Height = 40
+          Height = 8
           Top = 0
           Caption = 'ToolButton1'
           ImageIndex = 7
@@ -99,7 +99,7 @@ inherited frmRenamer: TfrmRenamer
         end
         object ToolButton2: TToolButton
           Left = 610
-          Height = 40
+          Height = 8
           Top = 0
           Caption = 'ToolButton2'
           ImageIndex = 7
@@ -133,7 +133,7 @@ inherited frmRenamer: TfrmRenamer
         end
         object ToolButton3: TToolButton
           Left = 471
-          Height = 40
+          Height = 8
           Top = 0
           Caption = 'ToolButton3'
           ImageIndex = 7
@@ -189,14 +189,14 @@ inherited frmRenamer: TfrmRenamer
         end
         object ToolButton4: TToolButton
           Left = 244
-          Height = 40
+          Height = 8
           Top = 0
           Caption = 'ToolButton4'
           Style = tbsSeparator
         end
         object ToolButton6: TToolButton
           Left = 294
-          Height = 40
+          Height = 8
           Top = 0
           Caption = 'ToolButton6'
           Style = tbsSeparator
@@ -211,7 +211,7 @@ inherited frmRenamer: TfrmRenamer
         end
         object ToolButton7: TToolButton
           Left = 91
-          Height = 40
+          Height = 8
           Top = 0
           Caption = 'ToolButton7'
           Style = tbsSeparator
@@ -226,7 +226,7 @@ inherited frmRenamer: TfrmRenamer
         end
         object ToolButton8: TToolButton
           Left = 141
-          Height = 40
+          Height = 8
           Top = 0
           Caption = 'ToolButton8'
           Style = tbsSeparator

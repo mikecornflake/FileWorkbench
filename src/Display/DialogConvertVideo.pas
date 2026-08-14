@@ -53,7 +53,7 @@ End;
 
 Procedure TdlgConvertVideo.ConvertingVideo(Sender: TObject);
 Begin
-  // TODO we can do better than this./..
+  // TODO: we can do better than this.   Put all this in a Thread
   Application.ProcessMessages;
 End;
 
