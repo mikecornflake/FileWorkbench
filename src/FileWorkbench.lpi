@@ -52,10 +52,10 @@
     </RunParams>
     <RequiredPackages Count="5">
       <Item1>
-        <PackageName Value="IM_database"/>
+        <PackageName Value="IM.database"/>
       </Item1>
       <Item2>
-        <PackageName Value="IM_forms"/>
+        <PackageName Value="IM.forms"/>
       </Item2>
       <Item3>
         <PackageName Value="fpexif_pkg"/>

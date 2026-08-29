@@ -25,7 +25,7 @@ This project has been used as a framework for video processing.  After I had ffp
 This is my first multi-threaded project.  I keep hacking in additional processing in the main thread, then am slowly work back through them migrating them to worker threads...
 
 # Build notes
-+ You'll need packages IM_units & IM_application from InspectorMike-common installed (https://github.com/mikecornflake/InspectorMike-common)
++ You'll need packages IM.units & IM.application from InspectorMike-common installed (https://github.com/mikecornflake/InspectorMike-common)
 + package InspectorMike-common has it's own dependencies: DirectShow, DirectX, LazSerial, cryptini,fpvectorialpkg,SyNEdit,TurboPowerIPro,ZeosLib
 + You'll also need packages fpExif & rxnew installed (either from OPM or Lazarus-CCR)
 + 
